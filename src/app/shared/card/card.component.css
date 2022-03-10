@@ -1,0 +1,16 @@
+:host {
+  background: rgba(255, 255, 255, 0.021);
+  box-shadow: 0 1px 14px 0 rgb(182, 2, 12);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgb(189, 2, 0);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: calc(1/3 * 100%);
+
+}
+p {
+  color: #ff0000;
+}

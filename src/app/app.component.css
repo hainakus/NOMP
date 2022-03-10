@@ -1,0 +1,43 @@
+:host {
+  /*background-image: url("../assets/ergo.png");*/
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+.basic {
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.4);
+  position: relative;
+}
+.blur {
+  position: absolute;
+  bottom: 25px;
+  right: 162px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}.basic {
+   width: 200px;
+   height: 200px;
+   background: rgba(255,255,255,0.4);
+   position: relative;
+ }
+.blur {
+  position: absolute;
+  bottom: 25px;
+  right: 162px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+  --btn-txt-color: white;
+  --btn-bg-color: rgb(11, 88, 160);
+}
+body.dark-theme {
+  --text-color: #6F6C99;
+  --text-color-active:#53B9EA;
+  --bkg-color: #201D47;
+  --btn-txt-color: rgb(46, 43, 43);
+  --btn-bg-color: rgb(20, 211, 195);
+}
+
+html,body {
+  width: 100%;
+  min-height: 100%;
+  overflow:hidden;
+  min-height: 99vh;
+}
+
+body {
+  background: radial-gradient(123.22% 129.67% at 100.89% -5.6%, #201D47 0%, #17153A 100%);
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+  position: relative;
+}
+
+h1 {
+  font-family: 'HelveticaNeue';
+  color:  #FFF;
+  font-size: 90px;
+  padding: 20px 30px;
+  text-shadow: 2px 2px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+
+.main {
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  top: 11px;
+  left: 280px;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  z-index: 4;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.drop {
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  position: absolute;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: block;
+  margin: 0 auto;
+}
+
+.drop1 {
+  width: 47%;
+  height: 150px;
+  top: 56px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.drop2 {
+  width: 40px;
+  height: 40px;
+  top: -30px;
+  left: -80%;
+  right: 0;
+  z-index: 4;
+}
+
+.drop3 {
+  width: 60px;
+  height: 60px;
+  top: 120px;
+  right: 30px;
+  z-index: 3;
+}
+
+.drop4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: -55px;
+  right: 20px;
+}
+
+span {
+  background:#fff;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+span a {
+  padding: 8px 12px;
+  font-family: Arial;
+  color: #000;
+  display: block;
+}

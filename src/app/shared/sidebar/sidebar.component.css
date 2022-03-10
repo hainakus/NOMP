@@ -1,0 +1,45 @@
+:host{
+  background: linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #17163B 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 300px;
+}
+.link {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  text-transform: uppercase;
+}
+.link:hover {
+  color: var(--text-color-active);
+  cursor: pointer;
+}
+.link:hover svg > path {
+  fill: var(--text-color-active);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  padding: 50px;
+  align-self: center;
+}
+.logotipo {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.logotipo svg {
+  object-fit: scale-down;
+  transform: scale(.1);
+}
