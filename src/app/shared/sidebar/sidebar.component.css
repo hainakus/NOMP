@@ -1,5 +1,11 @@
 :host{
-  background: linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #17163B 100%);
+  background: var(--sidebar-bkg-color);
+  background: rgba( 255, 255, 255, 0.01 );
+  //box-shadow: 0 8px 22px 0 rgba( 255, 255, 255, 0.37 );
+  backdrop-filter: blur( 12px );
+  -webkit-backdrop-filter: blur( 12px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   display: flex;
   flex-direction: column;
   height: 100vh;
