@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {Observable} from "rxjs";
 
@@ -14,7 +14,12 @@ export class ApiService {
     return this.http.get(environment.url + '/api/pool_stats')
   }
   getErgoPrice(): Observable<any> {
-    return this.http.get('https://coinranking.com/api/v2/coin/rfIHB4cXI/markets?offset=0&referenceCurrencyUuid=yhjMzLPhuIDl&limit=5')
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'x-access-token': 'coinranking1e0c56eb35667b5724dba93ea93384e185b0290187f8ce90'
+    })
+
+    return this.http.get('https://api.coinranking.com/v2/coins?symbols[]=ERG', { headers: headers })
   }
   getWorkersStats(): Observable<any> {
     return this.http.get(environment.url + '/api/stats')

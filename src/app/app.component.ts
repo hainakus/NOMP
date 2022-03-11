@@ -21,7 +21,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.pool$ =  interval(2000).pipe(switchMap(_ => this.api.getStats().pipe(map( data => data.pop().pools.ergo))))
 
     this.hashrate$ = interval(2000).pipe(switchMap(_ => this.api.getStats().pipe(map( data => { const result =  data.pop().pools.ergo.hashrate; return (result / 10000000000).toFixed(2)}))))
-    this.ergoPrice$ = interval(20000).pipe(switchMap(_ => this.api.getErgoPrice().pipe(map( data => data.data.markets[0]))))
+    this.ergoPrice$ = interval(20000).pipe(switchMap(_ => this.api.getErgoPrice().pipe(map( data => data.data.coins[0]))))
     this.hashrate$.subscribe(console.log)
   }
 
