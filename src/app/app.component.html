@@ -1,5 +1,8 @@
-<div class="col">
+<app-sidebar>
+    <app-search></app-search>
+</app-sidebar>
 
+<div class="col">
   <div class="row">
     <app-card>
       <svg width="30" height="34" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg" icon>
@@ -18,7 +21,7 @@
           </filter>
         </defs>
       </svg>
-      <div title class="gap-50"><p>{{ (pool$ | async)?.workerCount }}</p>  Miners </div>
+      <div title class="gap-50"><p>{{ (pool$ | async)?.minerCount }}</p>  Miners </div>
     </app-card>
     <app-card>
       <svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg" icon>
@@ -32,13 +35,12 @@
     </app-card>
     <app-card>
       <div icon>ERG</div>
-      <div title class="gap-50"><p>{{ (ergoPrice$ | async)?.price }}</p> USD </div>
+      <div title class="gap-10"><p>{{ (ergoPrice$ | async)?.rate.toFixed(2) }}</p> USD </div>
     </app-card>
-    <app-card></app-card>
+    <div>
+      <h1>POOL HASHRATE {{ (pool$ |async)?.hashrateString}}</h1>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
 
-  </div>
-  <div class="row-end">
-    <h1>POOL HASHRATE {{ (hashrate$ |async)}} GH</h1>
-  </div>
-  <div id="body"></div>
 </div>

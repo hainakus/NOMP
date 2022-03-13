@@ -1,6 +1,6 @@
 :host {
   mix-blend-mode: normal;
-  border: 1px solid var(--bkg-color);
+  border: 2px solid var(--btn-bg-color);
   box-sizing: border-box;
   border-radius: 10px;
   width: 209px;
@@ -13,19 +13,24 @@
   justify-content: space-around;
   font-size: 17px;
   gap: 10px;
+  backdrop-filter: blur( 11px );
+  -webkit-backdrop-filter: blur( 11px );
+  border-radius: 10px;
+  box-shadow: 6px 11px 15px -6px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 11px 15px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 11px 15px -6px rgba(0,0,0,0.75);
 }
 :host:hover{
-  background: rgba( 255, 0, 0, 0.7 );
   backdrop-filter: blur( 0.5px );
   -webkit-backdrop-filter: blur( 0.5px );
 }
 :host:hover {
-  color: #FFFFFF;
+  color: #FFF;
 }
 :host:hover svg path {
-  fill: #FFFFFF;
+  fill: #FFF;
 }
 
 :host {
-  color: rgba(255,255,255,1.7);
+  color: #FFF;
 }

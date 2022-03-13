@@ -9,10 +9,10 @@ body {
 body.dark-theme {
   --text-color: #FFF;
   --text-color-active:#FFF;
-  --bkg-color: #b40404;
+  --bkg-color: rgb(46, 43, 43);
   --btn-txt-color: rgb(46, 43, 43);
-  --btn-bg-color: rgb(20, 211, 195);
-  --sidebar-bkg-color: rgba(255,255,255,.2)
+  --btn-bg-color: rgb(255, 0, 0);
+  --sidebar-bkg-color: rgba(255,255,255,.002)
 }
 
 html,body {
@@ -23,14 +23,37 @@ html,body {
 }
 
 body {
-  background: radial-gradient(123.22% 129.67% at 100.89% -5.6%, #201D47 0%, #17153A 100%);
-  background-image: url("https://i.redd.it/jvh2wwo5h9171.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
 }
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+body {
+  background: url("https://i.redd.it/jvh2wwo5h9171.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  margin: 0px;
+}
+
+/*@keyframes gradient {*/
+/*  0% {*/
+/*    background-position: 0% 50%;*/
+/*  }*/
+/*  50% {*/
+/*    background-position: 100% 50%;*/
+/*  }*/
+/*  100% {*/
+/*    background-position: 0% 50%;*/
+/*  }*/
+/*}*/
 
 .wrap {
   position: relative;

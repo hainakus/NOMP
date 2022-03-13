@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "2a6ef300-b64e-4ecf-8317-44dddbfe0f70"
+    "analytics": "2a6ef300-b64e-4ecf-8317-44dddbfe0f70",
+    "defaultCollection": "@datorama/akita"
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -20,7 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nompa7",
+            "outputPath": "ruby_server/public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'http://marketcloudis.ml:8080'
+  url: 'https://marketcloudis.ml'
 };
 
 /*
